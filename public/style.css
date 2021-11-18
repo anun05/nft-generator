@@ -4,14 +4,21 @@
     width: 100vmax;
 }
 
-.create-acc {
+.back-div {
     background-color: #616A6B;
     height: 100%;
     width: 50%;
     transition: transform 1.5s;
 }
 
-.sign-in:hover .create-acc {
+.create-acc {
+    background-color: red;
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.sign-in:hover .back-div {
     transform: translateX(100%);
 }
 
