@@ -1,21 +1,71 @@
 .sign-in {
     background-color: white;
-    height: 100vmax;
-    width: 100vmax;
+    height: 100vh;
+    width: 100vw;
 }
 
 .back-div {
     background-color: #616A6B;
     height: 100%;
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: transform 1.5s;
 }
 
+.sing-in-btn {
+    background-color: Transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
 .create-acc {
-    background-color: red;
+    /* background-color: red; */
     height: 100%;
     width: 50%;
-    float: right;
+    float:right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.multi-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-headers {
+    display: flex;
+    font-weight: bolder;
+    font-size: 50px;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #616A6B;
+}
+
+.home-headers-2 {
+    display: flex;
+    font-weight: bolder;
+    font-size: 50px;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.acc-container {
+    /* background-color: blue; */
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
 }
 
 .sign-in:hover .back-div {
