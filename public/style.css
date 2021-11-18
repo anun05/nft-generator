@@ -69,9 +69,13 @@
 }
 
 .sign-in:hover .back-div {
-    transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 .icon-container {
-    margin-left: 0px;
+  margin-left: 0px;
+}
+
+.card {
+  margin-top: 200px;
 }

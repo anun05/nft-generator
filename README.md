@@ -1,5 +1,4 @@
-# nft-generator
-# README.md-Generator
+# NFT-generator
   ![Badge for GitHub repo top language](https://img.shields.io/static/v1?label=License&message=MIT&color=brightgreen) 
   
 
