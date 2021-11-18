@@ -1,0 +1,20 @@
+.sign-in {
+    background-color: white;
+    height: 100vmax;
+    width: 100vmax;
+}
+
+.create-acc {
+    background-color: #616A6B;
+    height: 100%;
+    width: 50%;
+    transition: transform 1.5s;
+}
+
+.sign-in:hover .create-acc {
+    transform: translateX(100%);
+}
+
+.icon-container {
+    margin-left: 0px;
+}
