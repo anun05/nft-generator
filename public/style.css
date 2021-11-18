@@ -1,27 +1,37 @@
 .sign-in {
-    background-color: white;
-    height: 100vmax;
-    width: 100vmax;
+  background-color: white;
+  height: 100vmax;
+  width: 100vmax;
 }
 
 .back-div {
-    background-color: #616A6B;
-    height: 100%;
-    width: 50%;
-    transition: transform 1.5s;
+  background-color: #616a6b;
+  height: 100%;
+  width: 50%;
+  transition: transform 1.5s;
 }
 
 .create-acc {
-    background-color: red;
-    height: 100%;
-    width: 50%;
-    float: right;
+  background-color: red;
+  height: 100%;
+  width: 50%;
+  float: right;
+}
+.acc-in {
+  background-color: white;
+  height: 100%;
+  width: 50%;
+  float: left;
 }
 
 .sign-in:hover .back-div {
-    transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 .icon-container {
-    margin-left: 0px;
+  margin-left: 0px;
+}
+
+.card {
+  margin-top: 200px;
 }
