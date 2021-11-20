@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS nft_gen;
+CREATE DATABASE nft_gen;
