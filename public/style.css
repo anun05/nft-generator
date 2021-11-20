@@ -27,9 +27,9 @@
     border-radius: 6px;
 }
 
-.main-container {
+/* .main-container {
 
-}
+} */
 
 .acc-in {
     height: 100%;
@@ -74,12 +74,12 @@
     color: white;
 }
 
-.acc-container {
-    /* background-color: blue; */
-    /* display: flex;
+/* .acc-container {
+    background-color: blue;
+    display: flex;
     justify-content: center;
-    align-content: center; */
-}
+    align-content: center;
+} */
 
 .sign-in:hover .back-div {
   transform: translateX(100%);
