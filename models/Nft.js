@@ -63,3 +63,4 @@ class Nft extends Model {}
 
     module.exports = Nft;
     // renamed to upper
+    // renamed to upper

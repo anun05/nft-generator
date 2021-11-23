@@ -61,3 +61,4 @@ User.init(
 module.exports = User;
 //
 // renamed to upper
+// renamed to upper
