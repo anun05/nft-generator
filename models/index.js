@@ -1,14 +1,14 @@
 // import models
-const nft = require("./Nft");
-const user = require("./User");
+const Nft = require("./Nft");
+const User = require("./User");
 
-user.hasMany(nft, {
+User.hasMany(Nft, {
   foreignKey: "name",
   onDelete: "CASCADE",
 });
 
-nft.belongsTo(user, {
+Nft.belongsTo(User, {
   foreignKey: "name",
 });
 
-module.exports = { user, nft };
+module.exports = { User, Nft };

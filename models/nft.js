@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection.js');
 
-class nft extends Model {}
+class Nft extends Model {}
 
-    nft.init(
+    Nft.init(
         {
           id: {
             type: DataTypes.INTEGER,
@@ -34,7 +34,30 @@ class nft extends Model {}
               max: 200,
             }
           }
+
+          },
+          {
+            hooks: {
+              beforeCreate: async (newUserData) => {
+                newUserData.password = await bcrypt.hash(newUserData.password, 10);
+                return newUserData;
+              },
+              beforeUpdate: async (updatedUserData) => {
+                updatedUserData.password = await bcrypt.hash(
+                  updatedUserData.password,
+                  10
+                );
+                return updatedUserData;
+              },
+            },
+            sequelize,
+            timestamps: false,
+            freezeTableName: true,
+            underscored: true,
+            modelName: "user",
           }
+          
+          
     );
 
-    module.exports = nft;
+    module.exports = Nft;
