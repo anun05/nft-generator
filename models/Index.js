@@ -12,3 +12,4 @@ Nft.belongsTo(User, {
 });
 
 module.exports = { User, Nft };
+// renamed to upper
