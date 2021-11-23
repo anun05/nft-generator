@@ -1,4 +1,4 @@
-// import models
+// import  models
 const Nft = require("./Nft");
 const User = require("./User");
 
