@@ -1,7 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
-const sequelize = require('../config/connection');
+const sequelize = require('../config/connection.js');
 
+class nft extends Model {}
 
     nft.init(
         {
@@ -35,3 +36,5 @@ const sequelize = require('../config/connection');
           }
           }
     );
+
+    module.exports = nft;
