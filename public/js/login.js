@@ -1,3 +1,24 @@
+const cardContainer = document.querySelector(".sign-in")
+const singUpOption = document.querySelector("#createAcc")
+const signInOption = document.querySelector("#logIn")
+
+cardContainer.addEventListener("click", e => {
+  const cardRightButton = e.target.closest(".signin-btn")
+  const cardLeftButton = e.target.closest(".signup-btn")
+
+  if (cardRightButton) {
+    cardRightButton.parentNode.parentNode.parentNode.classList.add("card__right")
+    signInOption.setAttribute('class', 'hidden')
+    singUpOption.setAttribute('class', 'multi-container')
+  }
+
+  if (cardLeftButton) {
+    cardLeftButton.parentNode.parentNode.parentNode.classList.remove('card__right')
+    singUpOption.setAttribute('class', 'hidden')
+    signInOption.setAttribute('class', 'multi-container')
+  }
+});
+
 const login = async (event) => {
   event.preventDefault();
 
