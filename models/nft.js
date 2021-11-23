@@ -47,6 +47,7 @@ class Nft extends Model {}
                   updatedUserData.password,
                   10
                 );
+
                 return updatedUserData;
               },
             },
