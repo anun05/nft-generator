@@ -2,17 +2,17 @@
     <div class="main-container">
 
 
-        <div class="acc-in">
-            <form>
+        <div class="acc-in ">
+            <form class="login-form">
                 <div class="mb-3">
                     <h2 class="home-headers">Sign in to NFT Gen</h2>
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" placeholder="Email" class="form-control" id="exampleInputEmail1"
+                    <label for="email-login" class="form-label">Email address</label>
+                    <input type="email" placeholder="Email" class="form-control" id="email-login"
                         aria-describedby="emailHelp" />
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" placeholder="password" class="form-control" id="exampleInputPassword1" />
+                    <label for="password-login" class="form-label">Password</label>
+                    <input type="password" placeholder="password" class="form-control" id="password-login" />
                 </div>
                 <button type="submit" class="btn btn-primary dark-btn">Submit</button>
             </form>
@@ -32,35 +32,28 @@
         </div>
 
 
-        <div class="create-acc">
-            <form>
+        <div class="create-acc" >
+            <form class="signup-form">
                 <h2 class="home-headers">Create Account</h2>
                 <div class="mb-3">
-                    <label for="exampleInputFirstName1" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="exampleInputFirstName1" aria-describedby="emailHelp" />
+                    <label for="name-signup" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name-signup" aria-describedby="emailHelp" />
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputLastName1" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="exampleInputLastName1" aria-describedby="emailHelp" />
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                    <label for="email-signup" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email-signup" aria-describedby="emailHelp" />
                     <div id="emailHelp" class="form-text">
                         We'll never share your email with anyone else.
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" />
+                    <label for="password-signup" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password-signup" />
                     <div id="passwordHelp" class="form-text">
                         Must be 8-20 characters long.
                     </div>
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                    <label class="form-check-label" for="exampleCheck1">I am not a robot!</label>
-                </div>
+                
                 <button type="submit" class="btn btn-primary dark-btn">Submit</button>
             </form>
         </div>

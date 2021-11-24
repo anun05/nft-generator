@@ -1,18 +1,18 @@
 const router = require("express").Router();
-const { Project, User } = require("../models/Index");
+const { Nft, User } = require("../models/Index");
 const withAuth = require("../utils/auth");
 
-router.get("/", (req, res) => {
-  res.render("login");
-  //   try {
-  //   } catch (err) {
-  //     res.status(500).json(err);
-  //   }
-});
+// router.get("/", (req, res) => {
+//   res.render("login");
+//   //   try {
+//   //   } catch (err) {
+//   //     res.status(500).json(err);
+//   //   }
+// });
 
-router.get("/nftpage", withAuth, (req, res) => {
-  res.render("nftpage", { logged_in: req.session.logged_in });
-});
+// router.get("/nftpage", withAuth, (req, res) => {
+//   res.render("nftpage", { logged_in: req.session.logged_in });
+// });
 
 router.get("/", (req, res) => {
   // If the user is already logged in, redirect the request to another route
@@ -20,11 +20,9 @@ router.get("/", (req, res) => {
     res.redirect("/nftpage");
     return;
   }
-
-  res.render("/");
+  res.render("login");
 });
 
-module.exports = router;
 
 // router.get('/',  (req, res) => {
 //   if (req.session.logged_in) {
@@ -58,29 +56,29 @@ module.exports = router;
 // });
 
 // Use withAuth middleware to prevent access to route
-// router.get('/profile', withAuth, async (req, res) => {
-//   try {
-//     // Find the logged in user based on the session ID
-//     const userData = await User.findByPk(req.session.user_id, {
-//       attributes: { exclude: ['password'] },
-//       include: [{ model: Project }],
-//     });
+router.get('/nftpage', withAuth, async (req, res) => {
+  try {
+    // Find the logged in user based on the session ID
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] },
+      include: [{ model: Nft }],
+    });
 
-//     const user = userData.get({ plain: true });
+    const user = userData.get({ plain: true });
 
-//     res.render('profile', {
-//       ...user,
-//       logged_in: true
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+    res.render('nftpage', {
+      ...user,
+      logged_in: true
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 // router.get('/login', (req, res) => {
 //   // If the user is already logged in, redirect the request to another route
 //   if (req.session.logged_in) {
-//     res.redirect('/profile');
+//     res.redirect('/nftpage');
 //     return;
 //   }
 
