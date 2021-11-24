@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection.js');
+const User = require('./user.js');
 //
 class Nft extends Model {}
 
@@ -32,7 +33,14 @@ class Nft extends Model {}
             allowNull: true,
             validate:{
               max: 200,
-            }
+            },
+          },
+          user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+              model: "user",
+              key: "id",
+            },
           }
 
           },
@@ -62,5 +70,4 @@ class Nft extends Model {}
     );
 
     module.exports = Nft;
-    // renamed to upper
-    // renamed to upper
+   

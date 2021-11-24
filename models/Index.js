@@ -3,14 +3,12 @@ const Nft = require("./Nft");
 const User = require("./User");
 
 User.hasMany(Nft, {
-  foreignKey: "name",
+  foreignKey: "user_id",
   onDelete: "CASCADE",
 });
 
 Nft.belongsTo(User, {
-  foreignKey: "name",
+  foreignKey: "user_id",
 });
 
 module.exports = { User, Nft };
-// renamed to upper
-// renamed to upper
