@@ -2,7 +2,6 @@ const cardContainer = document.querySelector(".sign-in");
 const singUpOption = document.querySelector("#createAcc");
 const signInOption = document.querySelector("#logIn");
 
-
 const login = async (event) => {
   event.preventDefault();
 
@@ -20,7 +19,7 @@ const login = async (event) => {
 
     if (response.ok) {
       // If successful, redirect the browser to the profile page
-      document.location.replace("/profile");
+      document.location.replace("/nftpage");
     } else {
       alert(response.statusText);
     }
