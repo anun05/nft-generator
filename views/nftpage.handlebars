@@ -1,36 +1,47 @@
-<button
-  id="signout"
-  class="no-button"
-  class="btn btn-primary dark-btn"
->Sign-Out</button>
-<h1>Create New NFT</h1>
-<div class="image-placeholder">
-  <h4>image placeholder text</h4>
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
 </div>
-<section>
 
-  <div class="mb-3">
-    <label for="nameNFT" class="form-label">Name</label>
-    <input
-      type="text"
-      placeholder="Item Name"
-      class="form-control"
-      id="nameNFT"
-      aria-describedby="emailHelp"
-    />
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>Create New NFT</h3>
+
+    <form>
+      <div class="form-group">
+        <label for="nameNFT" class="form-label">NFT Name:</label>
+        <input class="form-control" type="text" id="nameNFT" name="nameNFT" aria-describedby="emailHelp" />
+      </div>
+      <div class="form-group">
+        <label for="imageUrl" class="form-label">Image URL:</label>
+        <input class="form-control" type="url" id="imageUrl" name="imageUrl" aria-describedby="emailHelp" />
+      </div>
+      <div class="form-group">
+        <label for="description" class="form-label">NFT Description:</label>
+        <textarea  placeholder="Give a Description" class="form-control" id="descriptionNFT"
+      aria-describedby="emailHelp"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary dark-btn">Create</button>
+      </div>
+    </form>
   </div>
-  <div class="mb-3">
-    <label for="description" class="form-label">Description</label>
-    <input
-      type="text"
-      placeholder="Give a Description"
-      class="form-control"
-      id="descriptionNFT"
-      aria-describedby="emailHelp"
-    />
+
+  {{#if nfts.length}}
+  <div class="col-md-6">
+    <h3>Your NFTs:</h3>
+
+    {{#each nfts as |nft|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4>{{nft.nft_name}}</h4>
+        <img src="{{nft.image_url}}" alt="{{nft.nft_name}}" width="100" height="100">
+        <link src="https://goerli.etherscan.io/tx/{{nft.transaction_id}}"
+    </div>
+    {{/each}}
   </div>
+  {{/if}}
+</div>
 
-</section>
-
-<button type="submit" class="btn btn-primary dark-btn">Create</button>
 <script src="/js/logout.js"></script>
