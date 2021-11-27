@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@alch/alchemy-web3": "^1.1.8",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.0.4",
     "dotenv": "^8.2.0",
