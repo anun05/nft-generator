@@ -15,10 +15,16 @@
   * [Questions](#Questions)
 
   ## Installation
+  Hardhat (npm package )
+  Metamask ( the wallet )
+  Solidity 
+  Pinata ( npm package ) 
+  Alchemy ( website that creates app and API key ) 
+  Ethers.JS ( a library ) 
 
 
   ## Usage
-  
+  The way of using this is you first run node server.js, which then the user must go to a web broswer and go to the localhost3001. From here it takes you to the main page where you either create an account or sign in. once you are signed in, you can create your own NFT! 
 
 
   ## Contributing
