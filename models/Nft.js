@@ -20,6 +20,14 @@ Nft.init(
         max: 23,
       },
     },
+    image_url: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    transaction_id: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     public_key: {
       type: DataTypes.STRING,
       allowNull: false,
