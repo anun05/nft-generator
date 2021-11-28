@@ -6,7 +6,7 @@ const createBtn = async (event) => {
   const description = document.querySelector("#descriptionNFT").value.trim();
 
   if (name && url && description) {
-    const response = await fetch(`/api/nftpage`, {
+    const response = await fetch(`/api/nfts`, {
       method: "POST",
       body: JSON.stringify({ name, url, description }),
       headers: {

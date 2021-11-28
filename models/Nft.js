@@ -24,10 +24,10 @@ Nft.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    transaction_id: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
+    // transaction_id: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
     public_key: {
       type: DataTypes.STRING,
       allowNull: false,
