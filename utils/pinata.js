@@ -34,6 +34,7 @@ pinata.pinFileToIPFS(readableStreamForFile, ).then((result) => {
     //handle results here
     console.log(result.IpfsHash);
     const cid = result.IpfsHash;
+    
 }).catch((err) => {
     //handle error here
     console.log(err);
