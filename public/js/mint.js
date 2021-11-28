@@ -6,7 +6,8 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3")
 const web3 = createAlchemyWeb3(API_URL)
 
-const contract = require("../../hardhat/my-nft/artifacts/contracts/MyNFT.sol/MyNFT.json")
+const contract = require("../../hardhat/my-nft//artifacts/contracts/MyNFT.sol/MyNFT.json")
+const pinme = require("../../utils/pinata")
 const contractAddress = "0x0E9a5dDbB29623dCe7ef0C05CD043F8244850590"
 const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
 
@@ -30,7 +31,7 @@ async function mintNFT(tokenURI) {
         function (err, hash) {
           if (!err) {
             console.log(
-              "The hash of your transaction is: ",
+              "The hash of your transaction is ",
               hash,
               "\nCheck Alchemy's Mempool to view the status of your transaction!"
             )
@@ -48,4 +49,6 @@ async function mintNFT(tokenURI) {
     })
 }
 
-mintNFT("https://gateway.pinata.cloud/ipfs/QmUp5erz18Xm2H1LEpndfmVyd7tcdv1ksMU4atEUHdD7p5")
+//mintNFT(`https://gateway.pinata.cloud/ipfs/${imgUrl}`)
+
+module.exports=mintNFT;
