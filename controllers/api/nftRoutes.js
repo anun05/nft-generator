@@ -4,6 +4,7 @@ const withAuth = require("../../utils/auth");
 require("dotenv").config();
 const path = require('path');
 const fs = require('fs');
+const pinme = require("../../utils/pinata");
 
 router.get("/", async (req, res) => {
   try {
@@ -34,6 +35,7 @@ router.post("/", withAuth, async (req, res) => {
 
     if (newNft) {
       fs.writeFileSync(path.join(process.cwd(), "newNft.json"), JSON.stringify(newNft));
+      pinme('newNft.json');
       res.status(200).json(newNft)
     }
     
