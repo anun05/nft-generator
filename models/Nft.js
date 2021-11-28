@@ -1,7 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
-const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection.js");
-const User = require("./user.js");
 
 class Nft extends Model {}
 
@@ -56,7 +54,7 @@ Nft.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "Nft",
+    modelName: "nft",
   }
 );
 
