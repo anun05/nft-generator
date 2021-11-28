@@ -28,7 +28,8 @@
 
 
   ## Usage
-  The way of using this is you first run node server.js, which then the user must go to a web broswer and go to the localhost3001. From here it takes you to the main page where   you either create an account or sign in. once you are signed in, you can create your own NFT! 
+  The way of using this is you first run node server.js, which then the user must go to a web broswer and go to the localhost3001. From here it takes you to the main page where   you either create an account or sign in. once you are signed in, you can create your own NFT!(![NFT](https://user-images.githubusercontent.com/88000788/143784110-038a1c2f-66e0-414e-aea2-0504b8cb1aea.png)
+)
 
 
   ## Contributing
