@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Nft, User } = require("../models/Index");
+const { Nft, User } = require("../models");
 const withAuth = require("../utils/auth");
 
 // router.get("/", (req, res) => {
