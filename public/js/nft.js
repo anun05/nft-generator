@@ -14,11 +14,14 @@ const createBtn = async (event) => {
 
     console.log(response);
     if (response.ok) {
+      
       document.location.replace("/nftpage");
     } else {
       alert("Failed to create NFT");
     }
   }
+
 };
+
 
 document.querySelector(".create-form").addEventListener("submit", createBtn);
