@@ -1,0 +1,153 @@
+.nav-container {
+  position: relative;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-container-wht {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 100px;
+  background-image: url(https://i.imgur.com/MrhksXQ.png);
+  background-size: cover;
+  transition-duration: 1.5s;
+  transition-property: background, transform;
+  transition-timing-function: ease-in-out;
+}
+
+.icon-container-blk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 100px;
+  background-image: url(https://i.imgur.com/vgIxUWq.png);
+  background-size: cover;
+  transition-duration: 1.5s;
+  transition-property: background, transform;
+  transition-timing-function: ease-in-out;
+}
+
+.sign-in {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  display: inline;
+}
+
+.main-container {
+  display: flex;
+}
+
+.acc-in {
+  height: 90vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-headers {
+  display: flex;
+  font-weight: bolder;
+  font-size: 50px;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #616a6b;
+}
+
+.dark-btn {
+  background-color: Transparent;
+  border: 2px solid #616a6b;
+  color: #616a6b;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+  transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s, 0s, 0s;
+}
+
+.back-div {
+  background-image: url(https://www.ibm.com/blogs/blockchain/wp-content/uploads/2019/12/Retina_Display-758591537.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 50%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 1.5s;
+  transition-property: background, transform;
+  transition-timing-function: ease-in-out;
+}
+
+.multi-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-headers-2 {
+  display: flex;
+  font-weight: bolder;
+  font-size: 50px;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.signin-btn,
+.signup-btn {
+  background-color: Transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+.create-acc {
+  height: 90vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 200px;
+}
+
+.dark-btn:active {
+    background-color: #616a6b;
+    border: 2px solid #616a6b;
+    color: white;
+}
+
+.card__right .back-div {
+  transform: translateX(100%);
+  background-position-x: right;
+}

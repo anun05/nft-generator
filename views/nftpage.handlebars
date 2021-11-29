@@ -1,47 +1,78 @@
-<div class="row">
+<div class="row welcome-header">
   <div class="col-auto">
     <h2>Welcome, {{name}}!</h2>
   </div>
 </div>
 
-<div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Create New NFT</h3>
-
-    <form class="create-form">
-      <div class="form-group">
-        <label for="nameNFT" class="form-label">NFT Name:</label>
-        <input class="form-control" type="text" id="nameNFT" />
+<div class="row mt-6">
+  <div class="col-md-6 padding-l">
+    <div class="left-container">
+      <div>
+        <h3>Create New NFT</h3>
       </div>
-      <div class="form-group">
-        <label for="imageUrl" class="form-label">Image URL:</label>
-        <input class="form-control" type="url" id="imageUrl" />
+      <div class="form-container">
+        <form class="create-form">
+          <div class="form-group">
+            <label for="nameNFT" class="form-label">NFT Name:</label>
+            <input class="form-control" type="text" id="nameNFT" />
+          </div>
+          <div class="form-group">
+            <label for="imageUrl" class="form-label">Image URL:</label>
+            <input class="form-control" type="url" id="imageUrl" />
+          </div>
+          <div class="form-group">
+            <label for="description" class="form-label">NFT Description:</label>
+            <textarea placeholder="Give a Description" class="form-control" id="descriptionNFT"></textarea>
+          </div>
+          <div class="form-group form-btn">
+            <button type="submit" class="dark-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Create</button>
+          </div>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="description" class="form-label">NFT Description:</label>
-        <textarea placeholder="Give a Description" class="form-control" id="descriptionNFT"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary dark-btn">Create</button>
-      </div>
-    </form>
-  </div>
-
-  {{#if nfts.length}}
-  <div class="col-md-6">
-    <h3>Your NFTs:</h3>
-
-    {{#each nfts as |nft|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4>{{nft.nft_name}}</h4>
-        <img src="{{nft.image_url}}" alt="{{nft.nft_name}}" width="100" height="100">
-        {{!-- <link src="https://goerli.etherscan.io/tx/{{nft.transaction_id}}" --}}
     </div>
-    {{/each}}
   </div>
-  {{/if}}
+
+  <div class="col-md-6 padding-r">
+    <div class="right-container">
+      <div>
+        <h3>My NFTs</h3>
+      </div>
+      <div class="nft-container">
+        {{#if nfts.length}}
+        {{#each nfts as |nft|}}
+        <div class="nfts">
+          <div>
+            <h4>{{nft.nft_name}}</h4>
+          </div>
+          <div>
+            <img src="{{nft.image_url}}" alt="{{nft.nft_name}}" width="100" height="100">
+          </div>
+        </div>
+        {{/each}}
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal-container">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="create">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script src="/js/logout.js"></script>
 <script src="/js/nft.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

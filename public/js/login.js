@@ -1,6 +1,8 @@
 const cardContainer = document.querySelector(".sign-in");
 const singUpOption = document.querySelector("#createAcc");
 const signInOption = document.querySelector("#logIn");
+const iconContainerWht = document.querySelector("#iconContainerWht");
+const iconContainerBlk = document.querySelector("#iconContainerBlk");
 
 const login = async (event) => {
   event.preventDefault();
@@ -51,7 +53,6 @@ const signup = async (event) => {
 };
 
 document.querySelector(".login-form").addEventListener("submit", login);
-
 document.querySelector(".signup-form").addEventListener("submit", signup);
 
 cardContainer.addEventListener("click", (e) => {
@@ -64,6 +65,7 @@ cardContainer.addEventListener("click", (e) => {
     );
     signInOption.setAttribute("class", "hidden");
     singUpOption.setAttribute("class", "multi-container");
+    iconContainerWht.setAttribute("class", "icon-container-blk");
   }
 
   if (cardLeftButton) {
@@ -72,5 +74,6 @@ cardContainer.addEventListener("click", (e) => {
     );
     singUpOption.setAttribute("class", "hidden");
     signInOption.setAttribute("class", "multi-container");
+    iconContainerWht.setAttribute("class", "icon-container-wht");
   }
 });
