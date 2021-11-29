@@ -1,10 +1,7 @@
 {
-  
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
-    
   },
   "keywords": [],
   "author": "",
@@ -22,12 +19,15 @@
     "init": "^0.1.2",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5",
-    "y": "^0.3.2"
+    "y": "^0.3.2",
+    "@openzeppelin/contracts": "^4.4.0"
   },
   "devDependencies": {
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
     "hardhat": "^2.7.0",
-    "prettier": "^2.1.2"
+    "prettier": "^2.1.2",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "ethers": "^5.5.1"
   }
 }
