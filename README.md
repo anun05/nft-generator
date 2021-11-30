@@ -13,7 +13,6 @@
   * [Installation](#installation)
   * [Usage](#Usage)
   * [Contributing](#Contributing)
-  * [Tests](#Tests)
   * [License](#License)
   * [Questions](#Questions)
 
@@ -28,17 +27,15 @@
 
 
   ## Usage
-  The way of using this is you first run node server.js, which then the user must go to a web broswer and go to the localhost3001. From here it takes you to the main page where   you either create an account or sign in. once you are signed in, you can create your own NFT!(![NFT](https://user-images.githubusercontent.com/88000788/143784110-038a1c2f-66e0-414e-aea2-0504b8cb1aea.png)
-)
+  The way of using this is you first run node server.js, which then the user must go to a web broswer and go to the localhost3001. From here it takes you to the main page where   you either create an account or sign in. once you are signed in, you can create your own NFT!![NFT](https://user-images.githubusercontent.com/88000788/143970113-5a1d2fbf-23cf-4973-88a6-3262b9605f3d.png)![NFT](https://files.slack.com/files-pri/T028RNM7C4C-F02NYH0EP6X/screen_shot_2021-11-29_at_5.40.51_pm.jpg)![NFT](https://user-images.githubusercontent.com/88000788/143970445-05d150be-b31d-4956-adda-2102d6a1b885.png)
+
+
 
 
   ## Contributing
  * John des Garennes - jdesgarennes
  *  Israel Rios - israelmrios 
  *  Alejandro Nunez - anun05
-
-  ## Tests
-  None at the moment.
 
   ## License
   ISC 
