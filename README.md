@@ -2,7 +2,7 @@
   [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
   
   ## Delployed Applicaton Link 
-  
+  https://nft-generator101.herokuapp.com/
 
   ## Description
   First, it is all about understanding what an NFT is. A NFT stands for “NON, FUNGIBLE, TOKEN” and is made on Ethereum block chain from a ERC 721 smart contract. There are other   block chains that allow NFC token creations and smart contracts. Like Polygon. After this breif understanding, there is still more. For Instance, Ethereum contracts and         programing is done with a language called Solidity. Solidity is a Object oriented programing language and is designed around ECMAScript syntax to make it familiar for existing   web developers. NFTs can be used to represent real-world items like artwork and real-estate. But can also be used for more functional things like making tickets for a concert   or an event. Or to be used as a object in a online game, or represent virtual land deeds that can be bought and sold to other people. Thus, the creation of this application. 
